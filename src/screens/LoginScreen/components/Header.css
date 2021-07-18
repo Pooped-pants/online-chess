@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border-color: #26211b;
+    justify-content: space-between;
+    background-color: #26211b;
+    color: white;
+}
+
+.headerLeft {
+    margin: 5px;
+}
+
+.headerRight {
+    margin: 5px;
+}
