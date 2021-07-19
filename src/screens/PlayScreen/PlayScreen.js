@@ -1,7 +1,6 @@
 import React from 'react';
-import chat from "./components/chat";
-import EndGame from "./components/EndGame";
-import Timer from "./components/Timer";
+import GameEnd from "./components/GameEnd";
+import PlayGame from "./components/PlayGame"
 
 function PlayScreen() {
     return (
