@@ -16,6 +16,7 @@ function LoginBody() {
     function login() {
         auth.signInWithEmailAndPassword(email, password).catch(error => alert(error));
     };
+    // comment to check
 
     return (
         <div className='loginbody'>
