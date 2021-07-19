@@ -1,10 +1,11 @@
 import React from 'react'
-import chat from "./chat.css"
+import Chat from "./Chat.css"
 
 function chat() {
     return (
         <div>
-            <div className='Chat'>
+            <div className='chat'>
+                 {/*player name  */}
             </div>
         </div>
     )
