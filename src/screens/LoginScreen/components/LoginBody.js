@@ -17,14 +17,14 @@ function LoginBody() {
         auth.signInWithEmailAndPassword(email, password).catch(error => alert(error));
     };
     
-    function signUp() {
-        auth.createUserWithEmailAndPassword(email, password).then(() => {
-            db.collection('users').add({
-                email: email,
-                username: username,
-            })
-        })
-    };
+     async   function signUp() {
+                    auth.createUserWithEmailAndPassword(email, password).then(() => {
+                        db.collection('users').add({
+                            email: email,
+                            username: username,
+                        })
+                    })
+                };
 
     return (
         <div className='loginbody'>
