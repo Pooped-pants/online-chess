@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
 .header {
     display: flex;
     flex: 1;
@@ -5,6 +7,7 @@
     justify-content: space-between;
     background-color: #355070;
     color: white;
+    font-family: 'Otomanopee One', serif;
 }
 
 .headerLeft {

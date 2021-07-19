@@ -16,17 +16,23 @@ function LoginBody() {
     function login() {
         auth.signInWithEmailAndPassword(email, password).catch(error => alert(error));
     };
-    // comment to check
+    
+    function signUp() {
+        auth.createUserWithEmailAndPassword(email, password).then(() => {
+            db.collection('users').add({
+                email: email,
+                username: username,
+            })
+        })
+    };
 
     return (
         <div className='loginbody'>
             <form className='loginbodyForm'>
                 <input type='text' value={username} onChange={e => setUsername(e.target.value)} placeholder='Username' className='loginbodyFormInput' />
                 <input type='email' value={email} onChange={e => setEmail(e.target.value)} placeholder='Email' className='loginbodyFormInput' />
-                <input type='password' value={password} onChange={e => setPassword(e.target.value)} placeholder='Password' className='loginbodyFormInput' />
-                <Link to='/signup'>
-                    <input type='submit' value='Sign Up' className='signUp' />
-                </Link>
+                <input type='password' value={password} onChange={e => setPassword(e.target.value)} placeholder='Password' className='loginbodyFormInput' />    
+                <input type='submit' value='Sign Up' className='signUp' onClick={signUp} />
                 <input type='submit' value='Login' className='login' onClick={login} />
             </form>
         </div>
