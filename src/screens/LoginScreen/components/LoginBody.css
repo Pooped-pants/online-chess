@@ -19,7 +19,7 @@
     height: 40px;
     width: 400px;
     border-width: 0px;
-    background-color: green;
+    background-color: #eaac8b;
     color: white;
     margin: 20px;
     border-radius: 15px;
@@ -27,15 +27,15 @@
 }
 
 .signUp:hover {
-    background-color: yellowgreen;
-    color: green;
+    background-color: #e56b6f;
+    color: #fff;
     cursor: pointer;
 }
 
 .login {
     height: 40px;
     width: 400px;
-    background-color: #26211b;
+    background-color: #b56576;
     color: wheat;
     font-size: 18px;
     border-radius: 15px;
@@ -45,5 +45,5 @@
 .login:hover {
     cursor: pointer;
     background-color: wheat;
-    color: #26211b;
+    color: #6d597a;
 }
