@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './SignUpBody.css';
 
+//  username should not match, REMEMBER
 function SignUpBody() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');

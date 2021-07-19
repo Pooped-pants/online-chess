@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className='header'>
             <div className='headerLeft'>
-                <h1>Chessers.com</h1>
+                <h1>Chess</h1>
             </div>
             <div className='headerRight'>
                 <h1>Lets Play Chess!</h1>
