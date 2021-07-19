@@ -9,6 +9,8 @@
 
 .headerLeft {
     margin: 5px;
+    font: bold;
+    color: whitesmoke;
 }
 
 .headerRight {
