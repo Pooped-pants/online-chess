@@ -5,7 +5,8 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    useHistory
   } from "react-router-dom";
 
 function LoginBody() {
@@ -13,17 +14,25 @@ function LoginBody() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const history = useHistory();
+
     function login() {
         auth.signInWithEmailAndPassword(email, password).catch(error => alert(error));
     };
     
     function signUp() {
-        auth.createUserWithEmailAndPassword(email, password).then(() => {
+        auth.createUserWithEmailAndPassword(email, password).then((authUser) => {
+            authUser.user.updateProfile({
+                displayName: username,
+            })
+        }).then(() => {
             db.collection('users').add({
                 email: email,
                 username: username,
+            }).then(() => {
+                history.push('/home');
             })
-        })
+        }).catch(error => alert(error));
     };
 
     return (
