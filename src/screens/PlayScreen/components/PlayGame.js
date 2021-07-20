@@ -7,12 +7,15 @@ function PlayGame() {
 
             </div>;
             <div className='Pieces'>
-
+                
             </div>;
             <div className='Timer'>
 
             </div>;
             <div className='End_Button'>
+                <button>
+                    
+                </button>
 
             </div>;
 

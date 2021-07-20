@@ -5,12 +5,11 @@ import PlayGame from "./components/PlayGame"
 function PlayScreen() {
     return (
         <div>
-            <chat />
-            <Timer />
-            <EndGame />
+           <PlayGame />
+            <GameEnd />
         </div>
     )
 }
 
-export default PlayScreen
+export default PlayScreen;
 
