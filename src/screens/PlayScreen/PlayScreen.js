@@ -6,7 +6,6 @@ function PlayScreen() {
     return (
         <div>
            <PlayGame />
-            <GameEnd />
         </div>
     )
 }

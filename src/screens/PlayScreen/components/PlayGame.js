@@ -1,23 +1,10 @@
 import React from 'react';
+import Header from './PlayGameBody';
 
 function PlayGame() {
     return (
         <div>
-            <div className='Board'>
-
-            </div>;
-            <div className='Pieces'>
-                
-            </div>;
-            <div className='Timer'>
-
-            </div>;
-            <div className='End_Button'>
-                <button>
-                    
-                </button>
-
-            </div>;
+            <Header></Header>
 
         </div>
     )

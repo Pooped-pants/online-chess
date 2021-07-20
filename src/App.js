@@ -6,6 +6,7 @@ import PlayScreen from './screens/PlayScreen/PlayScreen'
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 
 function App() {
+    <title> Chess! </title>
     return (
         <Router>
             <div>

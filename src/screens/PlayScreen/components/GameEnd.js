@@ -6,9 +6,10 @@ function GameEnd() {
     return (
         <div>
             <div className='Re-Match'>
+                
 
             </div>
-            <div className='Home-Screen'>
+            <div className='Home-Screen-Redirect'>
                 
             </div>
         </div>
