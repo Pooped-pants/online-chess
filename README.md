@@ -6,10 +6,10 @@
 ### Make sure to go play at [link not updated](https://github.com/pooped-pants/online-chess)
 
 ## Contribution
-### For Contribution, Read [CONTRIBUTION.md](./Markdowns/CONTRIBUTION)
+### For Contribution, Read [CONTRIBUTION.md](./Markdowns/CONTRIBUTION.md)
 
 ## Issues
-### For Issues, Read [ISSUES.md](./Markdowns/ISSUES)
+### For Issues, Read [ISSUES.md](./Markdowns/ISSUES.md)
 
 ## Made By:
 ### @kkanekii
