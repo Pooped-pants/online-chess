@@ -1,0 +1,8 @@
+.Header {
+    justify-content:space-between ;
+    display: flex;
+    border-top: 0;
+    height: 10%;
+    width: 100%;
+    background-color: lightcyan;
+}

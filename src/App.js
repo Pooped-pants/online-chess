@@ -9,8 +9,12 @@ import firebase from 'firebase';
 import Restricted from './restricted';
 
 function App() {
+<<<<<<< HEAD
     const user = firebase.auth().currentUser;
 
+=======
+    <title> Chess! </title>
+>>>>>>> 27a4c7512d4a2a76e21f800be4f726c9c2d51b9d
     return (
         <Router>
             <div>
