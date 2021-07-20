@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './LoginBody.css';
 import {auth, db} from '../../../firebase';
 import {
@@ -8,40 +8,47 @@ import {
     Link,
     useHistory
   } from "react-router-dom";
+import firebase from 'firebase';
 
 function LoginBody() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    
+    //the current logged in user
+    const user = firebase.auth().currentUser;
 
+    // the navigation helper!
     const history = useHistory();
 
-    function login() {
-        auth.signInWithEmailAndPassword(email, password).catch(error => alert(error));
+    // a useEffect to keep checking if the user is logged in
+    useEffect(() => {
+        const unsub = auth.onAuthStateChanged((authUser) => {
+            console.log(authUser);
+            if (authUser) {
+                history.push('/home');
+            } else {
+                history.push('/');
+            }
+        })
+    }, [])
+
+    function login() {        
+        auth.signInWithEmailAndPassword(email, password);
+        history.push('/home');
     };
-    
-     async function signUp() {
-                    auth.createUserWithEmailAndPassword(email, password).then(() => {
-                        db.collection('users').add({
-                            email: email,
-                            username: username,
-                        })
-                    })
-                };
 
     function signUp() {
         auth.createUserWithEmailAndPassword(email, password).then((authUser) => {
             authUser.user.updateProfile({
                 displayName: username,
             })
-        }).then(() => {
-            db.collection('users').add({
-                email: email,
-                username: username,
-            }).then(() => {
-                history.push('/home');
-            })
-        }).catch(error => alert(error));
+        })
+        db.collection('users').add({
+            email: email,
+            username: username,
+        })
+        history.push('/home');
     };
 
 
