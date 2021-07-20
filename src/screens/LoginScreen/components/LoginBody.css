@@ -3,6 +3,7 @@
     flex-direction: column;
     flex: 0.5;
     place-items: center;
+    margin-top: 50px;
 }
 
 .loginbodyFormInput {
@@ -47,4 +48,11 @@
     cursor: pointer;
     background-color: wheat;
     color: #6d597a;
+}
+
+.forgotPassword {
+    margin-right: 340px;
+    margin-bottom :30px;
+    color: blue;
+    cursor: pointer;
 }
