@@ -20,8 +20,7 @@ function LoginBody() {
         auth.signInWithEmailAndPassword(email, password).catch(error => alert(error));
     };
     
-<<<<<<< HEAD
-     async   function signUp() {
+     async function signUp() {
                     auth.createUserWithEmailAndPassword(email, password).then(() => {
                         db.collection('users').add({
                             email: email,
@@ -29,7 +28,7 @@ function LoginBody() {
                         })
                     })
                 };
-=======
+
     function signUp() {
         auth.createUserWithEmailAndPassword(email, password).then((authUser) => {
             authUser.user.updateProfile({
@@ -44,7 +43,7 @@ function LoginBody() {
             })
         }).catch(error => alert(error));
     };
->>>>>>> 99d910cc67f6bf2de0001c369b380d7f7be22ab8
+
 
     return (
         <div className='loginbody'>
