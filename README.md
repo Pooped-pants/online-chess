@@ -3,7 +3,7 @@
 
 ## Introduction
 
-### This repo is for a Chess Application made by [The Poopy Pants Team](https://github.com/pooped-pants)
+### This repo is for a Chess Application made react
 ### Make sure to go play at [link not updated](https://github.com/pooped-pants/online-chess)
 
 ## Contribution
@@ -15,8 +15,6 @@
 ## Made By:
 ### @kkanekii
 ### @Klassic-Man
-### @Samar-Jhadhav
-### @Kongruene
 
 
 # Thank You 
